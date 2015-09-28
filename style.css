@@ -1,0 +1,74 @@
+
+html{
+
+}
+
+body{
+  background: #120B10;
+}
+#header{
+font-family: 'Permanent Marker', cursive;
+font-size: 40pt;
+text-align: center center;
+position: relative;
+width: 400px;
+height:50px;
+margin: 20px auto 20px auto;
+color: #CAFF42;
+}
+
+#description{
+font-family: 'Open Sans', sans-serif;
+font-weight: 300;
+font-size:16pt;
+text-align: right;
+position: relative;
+width: 400px;
+margin: 20px auto 20px auto;
+color: #CAFF42;
+
+}
+
+#videoContainer{
+  margin:40px 20px 40px 20px;
+}
+
+.block {
+  display: inline-block;
+  position: relative;
+}
+
+.cover{
+  z-index: 1000;
+  float:left;
+  position: absolute;
+  left:0px;
+  top:0px;
+  height: 100%;
+  width: 100%;
+  background-color: #CAFF42;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out 0.1s;
+  -moz-transition: all 0.3s ease-out 0.1s;
+  -o-transition: all 0.3s ease-out 0.1s;
+  -ms-transition: all 0.3s ease-out 0.1s;
+  transition: all 0.3s ease-out 0.1s;
+  background-blend-mode: multiply;
+
+}
+
+.block:hover .cover {
+   filter: alpha(opacity=100);
+   opacity: 0.7;
+   top: 0px;
+   -webkit-transition-delay: 0s;
+   -moz-transition-delay: 0s;
+   -o-transition-delay: 0s;
+   -ms-transition-delay: 0s;
+   transition-delay: 0s;
+   -webkit-animation: bounceY 0.9s linear;
+   -moz-animation: bounceY 0.9s linear;
+   -ms-animation: bounceY 0.9s linear;
+   animation: bounceY 0.9s linear;
+}
